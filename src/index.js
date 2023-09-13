@@ -8,7 +8,7 @@ const refs = {
     catInfoWrapper: document.querySelector('.cat-info'),
     loader: document.querySelector('.loader'),
     error: document.querySelector('.error'),
-    catSlimSelectWrapper: document.querySelector('.breed-select'),
+    catSlimSelectWrapper: document.querySelector('.ss-main.breed-select'),
 }
 
 
@@ -29,7 +29,7 @@ function addCats() {
  
         refs.catBreedsEl.innerHTML = renderCatsBreedsList(cats);
         new SlimSelect({
-            select: '#single'
+            select: '#ace'
         });
         refs.catSlimSelectWrapper = document.querySelector('.ss-main.breed-select');
     }).catch(() => {
