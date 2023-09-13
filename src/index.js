@@ -58,9 +58,9 @@ function getCatCard(breed, url) {
       </p>`;
 }
 
-refs.catBreedsEl.addEventListener('change', oncatBreedsElChange);
+refs.catBreedsEl.addEventListener('change', onCatBreedsElChange);
 
-function oncatBreedsElChange(event) {
+function onCatBreedsElChange(event) {
     const breedId = event.target.value;
     refs.catBreedsEl.classList.add('js-hidden');
     refs.catSlimSelectWrapper.classList.add('js-hidden');
